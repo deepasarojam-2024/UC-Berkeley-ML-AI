@@ -21,7 +21,7 @@ Python
 
 ## Connect with me
 
-- [@deepa-sarojam](https://www.github.com/deepa-sarojam)
+- [@deepa-sarojam](https://www.github.com/deepasarojam-2024)
 - [Medium](https://medium.com/@deepa-sarojam)
 - [LinkedIn](https://www.linkedin.com/in/deepa-sarojam/)
 
@@ -37,7 +37,7 @@ Python
 
 ## Feedback
 
-If you have any feedback, please reach out at dsarojam2021@gmail.com. 
+If you have any feedback, please reach out to dsarojam2022@gmail.com. 
 
 
 
