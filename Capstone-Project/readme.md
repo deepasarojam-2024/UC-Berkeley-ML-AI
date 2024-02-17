@@ -15,11 +15,10 @@ Files Submitted for Review
 The Capstone Project proposal proposal.pdf.
 The Capstone Project Report capstone_project_report.pdf.
 The implemented code, in the form of an ipython notebook Capstone Project.ipynb
-The datasets used for the project can be located on the Kaggle Competition Page.
-The highest scoring submission file is also included in the repository as submit_VGG16_run7.csv.
-The best saved weights for VGG16 could not be included as the files size was ~270mb.
+The datasets used for the project  
+ 
 Libraries Used
-The neural network was trained using a Jupyter Notebook and the following Python 3 libraries:
+Was trained using a Jupyter Notebook and the following Python 3 libraries:
 
 NumPy 1.12.0
 MatPlotLib 2.0.0
