@@ -91,6 +91,8 @@ The cleaned data was divided into target and feature (X and y) and then split in
           
 ![image](https://github.com/deepasarojam-2024/UC-Berkeley-ML-AI/assets/153694311/c49afddc-885a-40e3-ad62-a6a31a20ba85)
 
+![image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*bWt6NF7_n0-9l_iDFVKS5A.png)
+
 Models used:
 - Ridge regression
 - Lasso regression 
