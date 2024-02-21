@@ -56,15 +56,16 @@ Visualized the data using a seaborn plot to understand each feature.
 		○ There are cars with 0~100K price cars in the dataset. As the odometer reading increases, the price of the car decreases. 
 
 ## Data Cleaning
-	• Dropped the id column since it's holding a unique identifier that has no predictive meaning
-	• Dropped the size column since it's missing more than 70% of its data
-	• Dropped duplicate VINs, with the assumption that no two cars can have the same VINs. 
-	• Dropped the VIN column after cleaning the duplicates, since it's just holding a unique identifier that has no predictive meaning
-	• Removed odometer outliers and kept cars with odometer which is less than 500K
-	• Removed cars with age > 80
-	• Remove price outliers and keep cars with prices between 100 and 100,000 USD 
-	• Removed all title_status besides clean as 90% of data had `clean` title status.
- Removed rows that contained other value   
+		• Dropped the id column since it's holding a unique identifier that has no predictive meaning
+		• Dropped the size column since it's missing more than 70% of its data
+		• Dropped duplicate VINs, with the assumption that no two cars can have the same VINs. 
+		• Dropped the VIN column after cleaning the duplicates, since it's just holding a unique identifier that has no predictive meaning
+		• Removed odometer outliers and kept cars with odometer which is less than 500K
+		• Removed cars with age > 80
+		• Remove price outliers and keep cars with prices between 100 and 100,000 USD 
+		• Removed all title_status besides clean as 90% of data had `clean` title status.
+		• Removed rows that contained other value  
+			
 
 
 
@@ -91,11 +92,11 @@ sklearn.model_selection.GridSearchCV(estimator, param_grid,scoring=None,
 <img width="443" alt="image" src="https://github.com/deepasarojam-2024/UC-Berkeley-ML-AI/assets/153694311/e0e365bb-4543-4bba-9257-9d03518a00e1">
 
 Models used:
-	- Ridge regression
-	- Lasso regression 
-	- Linear regression
-	- Linear regression with TransformedTargetRegressor; 3-degree Polynomial
-	- Linear regression with Feature Selection (SFS) and TransformedTargetRegressor 
+	• Ridge regression
+	• Lasso regression 
+	• Linear regression
+	• Linear regression with TransformedTargetRegressor; 3-degree Polynomial
+	• Linear regression with Feature Selection (SFS) and TransformedTargetRegressor 
 
 ## Evaluation
 The following variables are the top predictors in the model:
