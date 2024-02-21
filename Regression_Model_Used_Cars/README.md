@@ -9,20 +9,20 @@ To frame the task, throughout these practical applications, we will refer back t
 The code used to perform the analysis and create this report can be found here. 
 As it was mentioned, our original data holds half a million observations with a few dozen features, most categorical, so accurate feature selection and model selection were extremely important.  
 As we had some intuition in the target area as well as some practical experience, we were able to prune our feature list to just 12 most important in our opinion:
-	• 10 categorical features:
-		○ manufacturer (brand)
-		○ condition
-		○ cylinders
-		○ fuel type
-		○ title_status
-		○ transmission type
-		○ drive type (AWD / FWD / RWD)
-		○ car type
-		○ paint color
-		○ state
-	• 2 continuous features:
-		○ year
-		○ odometer
+- 10 categorical features:
+	-  manufacturer (brand)
+	- condition
+	- cylinders
+	- fuel type
+	- title status
+	- transmission type
+	-  drive type (AWD / FWD / RWD)
+	- car type
+	- paint color
+	- state
+- 2 continuous features:
+	- year
+	- odometer
 
 ## Business Understanding
 
