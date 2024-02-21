@@ -110,7 +110,7 @@ We see a better `R-Squared = 0.591952` with Ridge followed by `R-Square=0.591950
 
 ![image](https://github.com/deepasarojam-2024/UC-Berkeley-ML-AI/assets/153694311/5e50f15a-49f3-4b51-88bf-07613d2f547f)
 
-For the test RMSE, Linear Regression with Feature Selection (SFS) and TransformedTargetRegressor gave a higher price of ~`9943`, followed by Linear Regression with TransformedTargetRegressor with a price value of ~`9537`.
+For the test RMSE, Linear Regression with Feature Selection (SFS) and TransformedTargetRegressor gave a higher price of ~`RMSE = 9943`, followed by Linear Regression with TransformedTargetRegressor with a price value of ~`RMSE = 9537`.
 
 ![image](https://github.com/deepasarojam-2024/UC-Berkeley-ML-AI/assets/153694311/b6edcf68-acfe-4e13-b8cc-8763ff88e6af)
 
