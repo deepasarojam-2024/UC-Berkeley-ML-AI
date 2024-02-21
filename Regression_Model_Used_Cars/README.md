@@ -84,18 +84,18 @@ Polynomial Features - Polynomial Features are created by raising existing featur
 ## Modeling
 The cleaned data was divided into target and feature (X and y) and then split into training and test data. I used a GridSearchCV and K-FOLD cross-validation on all models. GridSearchCV is the process of performing hyperparameter tuning to determine the optimal values for a given model. K-FOLD splits the dataset into k consecutive folds (without shuffling by default).
 
-sklearn.model_selection.GridSearchCV(estimator, param_grid,scoring=None,
-          n_jobs=None, iid='deprecated', refit=True, cv=None, verbose=0, 
-          pre_dispatch='2*n_jobs', error_score=nan, return_train_score=False)
+	sklearn.model_selection.GridSearchCV(estimator, param_grid,scoring=None,
+	          n_jobs=None, iid='deprecated', refit=True, cv=None, verbose=0, 
+	          pre_dispatch='2*n_jobs', error_score=nan, return_train_score=False)
           
 <img width="443" alt="image" src="https://github.com/deepasarojam-2024/UC-Berkeley-ML-AI/assets/153694311/e0e365bb-4543-4bba-9257-9d03518a00e1">
 
 Models used:
-	• Ridge regression
-	• Lasso regression 
-	• Linear regression
-	• Linear regression with TransformedTargetRegressor; 3-degree Polynomial
-	• Linear regression with Feature Selection (SFS) and TransformedTargetRegressor 
+- Ridge regression
+- Lasso regression 
+- Linear regression
+- Linear regression with TransformedTargetRegressor; 3-degree Polynomial
+- Linear regression with Feature Selection (SFS) and TransformedTargetRegressor 
 
 ## Evaluation
 The following variables are the top predictors in the model:
