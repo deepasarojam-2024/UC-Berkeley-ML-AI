@@ -87,8 +87,9 @@ The cleaned data was divided into target and feature (X and y) and then split in
 	sklearn.model_selection.GridSearchCV(estimator, param_grid,scoring=None,
 	          n_jobs=None, iid='deprecated', refit=True, cv=None, verbose=0, 
 	          pre_dispatch='2*n_jobs', error_score=nan, return_train_score=False)
+	   
           
-<img width="443" alt="image" src="https://github.com/deepasarojam-2024/UC-Berkeley-ML-AI/assets/153694311/e0e365bb-4543-4bba-9257-9d03518a00e1">
+![image](https://github.com/deepasarojam-2024/UC-Berkeley-ML-AI/assets/153694311/c49afddc-885a-40e3-ad62-a6a31a20ba85)
 
 Models used:
 - Ridge regression
