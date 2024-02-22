@@ -120,8 +120,8 @@ For the test RMSE, Linear Regression with Feature Selection (SFS) and Transforme
 
 
 ## Deployment
-From the above results, the data shows that the main features that drive the car price were: year, odometer, fuel type, number of cylinders and type of the car are the most important features for predicting car price.
+Based on the findings presented earlier, the data indicates that key factors influencing car prices include the year, odometer reading, fuel type, number of cylinders, and car type, making them pivotal in predicting car prices.
 
-Year and odometer were the most dominant features, so when looking at buying used cars for the dealership, we'd recommend buying newer cars and cars with low odometer. We'd also stay away from cars with high odometers and old cars.
+Given that year and odometer were identified as the primary influential factors, our recommendation for purchasing used cars for the dealership would emphasize acquiring newer vehicles with low odometer readings. Conversely, it's advisable to steer clear of vehicles with high odometer readings and older models.
 
-Data also show that the number of cylinders (more cylinders the higher the price), and type of the car (4wd), and the fuel type (diesel), play a role in driving the price up, so it's worth highlighting these features when selling a used car, and pay attention to these details when pricing used cars.
+Additionally, the data reveals that the number of cylinders (with more cylinders correlating to higher prices), car type (specifically 4WD), and fuel type (particularly diesel) contribute to increasing the price. Hence, it's prudent to emphasize these attributes when marketing a used car and to carefully consider them when determining pricing for used vehicles.
