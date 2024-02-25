@@ -8,3 +8,7 @@ Python
 
 
 ## Appendix
+Connect with me
+@deepa-sarojam
+Medium
+LinkedIn
