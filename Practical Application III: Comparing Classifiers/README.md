@@ -34,6 +34,7 @@ Input variables:
 20. nr.employed: number of employees - quarterly indicator (numeric)
 
 Output variable (desired target):
+
 21. y - has the client subscribed to a term deposit? (binary: 'yes','no')
 
 
@@ -52,35 +53,18 @@ According to that, the best predictive model is **SVM**, which provides a high-q
 **Call duration is the most relevant feature**, meaning longer calls increase success. Secondly, **the month of contact**. Further analysis can show (Figure 6) that success is most likely to occur in the last month of each trimester (March, June, September, and December). Such knowledge can be used to shift campaigns to happen in those months.
 
 ## Data Understanding
-First, the dataset was analyzed in detail. The dataset contained 427K records, with 3 numerical and 13 categorical features: id, price, year, manufacturer, model, condition, cylinders, fuel, title_status, transmission, VIN, drive, size, type, paint_color, and state. 
-
-With close consideration, outliers were identified for some of the features that would skew the data. To avoid any skewness, the outliers were removed. Identified duplicate VINs and those were removed first. Later, Nan's, and values like 'other' were removed/imputed. 
-
-Visualized the data using a seaborn plot to understand each feature. 
-- Of the Luxury brands, Ferrari was the most pricey with a price > 65K. 
-- Of the Economy brands, Volkswagen was the most pricey with a price >12K. 
-- The 'Other' transmission type was more pricey followed by `automatic` and then `manual`. I assume that the other category is unknown or data missing. 
-- Fuel type `Diesel` was more pricey followed by `Electric`. Hybrid cars were the least. 
-- `4WD` drive types were more pricey compared to `RWD` and `FWD`. 
-- `PICKUP` cars were more pricey followed by `TRUCK`. 
-- Most used cars were `OFFROAD` type followed by `CONVERTIBLE`. 
-- There are cars with 0~100K price cars in the dataset. As the odometer reading increases, the price of the car decreases. 
+First, the dataset was analyzed in detail. The dataset contained 41188 records, with 10 numerical and 11 categorical features. 
 
 ## Data Cleaning
-As part of data cleaning, we performed the below.
-- Dropped the id column since it's holding a unique identifier that has no predictive meaning
-- Dropped the size column since it's missing more than 70% of its data
-- Dropped duplicate VINs, with the assumption that no two cars can have the same VINs. 
-- Dropped the VIN column after cleaning the duplicates, since it's just holding a unique identifier that has no predictive meaning
-- Removed odometer outliers and kept cars with odometer which is less than 500K
-- Removed cars with age > 80
-- Remove price outliers and keep cars with prices between 100 and 100,000 USD 
-- Removed all title_status besides clean as 90% of data had `clean` title status.
-- Removed rows that contained other value  
-			
+There were no missing values in the data. Since there was no impact on the social and economic context attributes, these fields were dropped. 
+ 			
 
 ## Data Preparation
-In addition to outlier cleaning from the data understanding process, I've split the data into categorical, numerical, and ordinal features. 
+In addition to outlier cleaning from the data understanding process, I've split the data into categorical, numerical, and ordinal features.
+- Numerical features: 'age', 'duration', 'campaign', 'pdays', 'previous'
+- Categorical features: 'job', 'marital', 'default', 'housing', 'loan'
+- Ordinal features: 'month', 'day_of_week'
+- Ohe features: 'education', 'poutcome', 'contact'
 
 Treated them with separate scaling, imputing, and encoding techniques.
 - **StandardScaler** - Standardize features by removing the mean and scaling to unit variance.
@@ -91,22 +75,33 @@ Treated them with separate scaling, imputing, and encoding techniques.
 - **JamesSteinEncoder** - This is a target-based encoder used for Categorical Encoding. It dominates the "ordinary" least squares approach, i.e., it has a lower mean squared error.
 - **OrdinalEncoder** - Encode categorical features as an integer array.
 
+![image](https://imgur.com/xUJ00l5.png)
+
 
 ## Modeling
-The cleaned data was divided into target and feature (X and y) and then split into training and test data. I used a GridSearchCV on all models. GridSearchCV is the process of performing hyperparameter tuning to determine the optimal values for a given model.  
+The cleaned data was divided into target and feature (X and y) and then split into training and test data. First, a Baseline model (Naive Bayes) was used to evaluate the performance, followed by a Simple model (Logistic Regression). Then, the **RocCurveDisplay** curve was plotted for both models. 
 
-	sklearn.model_selection.GridSearchCV(estimator, param_grid,scoring=None,
-	          n_jobs=None, iid='deprecated', refit=True, cv=None, verbose=0, 
-	          pre_dispatch='2*n_jobs', error_score=nan, return_train_score=False)
-	   
+Baseline model 	(Naive Bayes) 	
+
+![](https://imgur.com/YPAtbtl.png) 	
+
+Simple model (logistic Regression) 
+
+![](https://imgur.com/5EWaMcY.png) 
+
           
-![image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*bWt6NF7_n0-9l_iDFVKS5A.png)
 
 Models used:
 - **KNN Classifier**: A non-parametric classification algorithm that assigns labels to data points based on the majority class of their k-nearest neighbors.
 - **SVM (Support Vector Machine)**: A supervised learning algorithm that finds the optimal hyperplane to classify data points by maximizing the margin between classes.
 - **Decision Tree Classifier**: A hierarchical tree-like structure that recursively splits data based on feature attributes to make classification decisions.
 - **Logistic Regression**: A statistical method for binary classification that models the probability of a binary outcome using a logistic function.
+
+A GridSearchCV was performed finally along with all models. GridSearchCV is the process of performing hyperparameter tuning to determine the optimal values for a given model.  
+
+	sklearn.model_selection.GridSearchCV(estimator, param_grid,scoring=None,
+	          n_jobs=None, iid='deprecated', refit=True, cv=None, verbose=0, 
+	          pre_dispatch='2*n_jobs', error_score=nan, return_train_score=False)
 
 ## Performance Evaluation of models 
 1. **Accuracy**: The ratio of correctly predicted instances to the total number of instances, measuring the overall correctness of the model's predictions.
@@ -122,6 +117,7 @@ The following variables are the important features of the model:
 3.   previous
 4.   month
 
+SVM is the best model with an accuracy of 0.903937 and a Precision of 0.682403. Below are the results of all the models for different evaluation metrics. 
 
-## Deployment
-Based on the findings presented earlier, the data indicates that key factors influencing 
+![](https://imgur.com/cY0kGTh.png) 
+
