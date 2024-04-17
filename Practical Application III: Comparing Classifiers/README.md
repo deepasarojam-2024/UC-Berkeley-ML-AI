@@ -49,7 +49,7 @@ According to that, the best predictive model is **SVM**, which provides a high-q
 
 ![](https://imgur.com/HRjM226.png)
 
-**Call duration is the most relevant feature**, meaning that longer calls tend to increase successes. Secondly, **the month of contact**. Further analysis can show (Figure 6) that success is most likely to occur in the last month of each trimester (March, June, September, and December). Such knowledge can be used to shift campaigns to occur in those months.
+**Call duration is the most relevant feature**, meaning longer calls increase success. Secondly, **the month of contact**. Further analysis can show (Figure 6) that success is most likely to occur in the last month of each trimester (March, June, September, and December). Such knowledge can be used to shift campaigns to happen in those months.
 
 ## Data Understanding
 First, the dataset was analyzed in detail. The dataset contained 427K records, with 3 numerical and 13 categorical features: id, price, year, manufacturer, model, condition, cylinders, fuel, title_status, transmission, VIN, drive, size, type, paint_color, and state. 
@@ -83,17 +83,17 @@ As part of data cleaning, we performed the below.
 In addition to outlier cleaning from the data understanding process, I've split the data into categorical, numerical, and ordinal features. 
 
 Treated them with separate scaling, imputing, and encoding techniques.
-**StandardScaler** - Standardize features by removing the mean and scaling to unit variance.
-**Polynomial Features** - Polynomial Features are created by raising existing features to an exponent.
-**IterativeImputer** - A strategy for imputing missing values by modeling each feature with missing values as a function of other features in a round-robin fashion.
-**RandomSampleImputer** - The RandomSampleImputer() replaces missing data with a random sample extracted from the variable. It works with both numerical and categorical variables.
-**OneHotEncoder** - Encodes categorical features as a one-hot numeric array.
-**JamesSteinEncoder** - This is a target-based encoder used for Categorical Encoding. It dominates the "ordinary" least squares approach, i.e., it has a lower mean squared error.
-**OrdinalEncoder** - Encode categorical features as an integer array.
+- **StandardScaler** - Standardize features by removing the mean and scaling to unit variance.
+- **Polynomial Features** - Polynomial Features are created by raising existing features to an exponent.
+- **IterativeImputer** - A strategy for imputing missing values by modeling each feature with missing values as a function of other features in a round-robin fashion.
+- **RandomSampleImputer** - The RandomSampleImputer() replaces missing data with a random sample extracted from the variable. It works with both numerical and categorical variables.
+- **OneHotEncoder** - Encodes categorical features as a one-hot numeric array.
+- **JamesSteinEncoder** - This is a target-based encoder used for Categorical Encoding. It dominates the "ordinary" least squares approach, i.e., it has a lower mean squared error.
+- **OrdinalEncoder** - Encode categorical features as an integer array.
 
 
 ## Modeling
-The cleaned data was divided into target and feature (X and y) and then split into training and test data. I used a GridSearchCV and K-FOLD cross-validation on all models. GridSearchCV is the process of performing hyperparameter tuning to determine the optimal values for a given model.  
+The cleaned data was divided into target and feature (X and y) and then split into training and test data. I used a GridSearchCV on all models. GridSearchCV is the process of performing hyperparameter tuning to determine the optimal values for a given model.  
 
 	sklearn.model_selection.GridSearchCV(estimator, param_grid,scoring=None,
 	          n_jobs=None, iid='deprecated', refit=True, cv=None, verbose=0, 
@@ -103,10 +103,10 @@ The cleaned data was divided into target and feature (X and y) and then split in
 ![image](https://miro.medium.com/v2/resize:fit:720/format:webp/1*bWt6NF7_n0-9l_iDFVKS5A.png)
 
 Models used:
-- KNN Classifier: A non-parametric classification algorithm that assigns labels to data points based on the majority class of their k-nearest neighbors.
-- SVM (Support Vector Machine): A supervised learning algorithm that finds the optimal hyperplane to classify data points by maximizing the margin between classes.
-- Decision Tree Classifier: A hierarchical tree-like structure that recursively splits data based on feature attributes to make classification decisions.
-- Logistic Regression: A statistical method for binary classification that models the probability of a binary outcome using a logistic function.
+- **KNN Classifier**: A non-parametric classification algorithm that assigns labels to data points based on the majority class of their k-nearest neighbors.
+- **SVM (Support Vector Machine)**: A supervised learning algorithm that finds the optimal hyperplane to classify data points by maximizing the margin between classes.
+- **Decision Tree Classifier**: A hierarchical tree-like structure that recursively splits data based on feature attributes to make classification decisions.
+- **Logistic Regression**: A statistical method for binary classification that models the probability of a binary outcome using a logistic function.
 
 ## Performance Evaluation of models 
 1. **Accuracy**: The ratio of correctly predicted instances to the total number of instances, measuring the overall correctness of the model's predictions.
