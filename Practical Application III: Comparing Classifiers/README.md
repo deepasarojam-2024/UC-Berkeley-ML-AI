@@ -117,7 +117,7 @@ The following variables are the important features of the model:
 3.   previous
 4.   month
 
-SVM is the best model with an accuracy of 0.903937 and a Precision of 0.682403. Below are the results of all the models for different evaluation metrics. 
+SVM is the best model with an accuracy of 0.903937 and a Precision of 0.682403. Below are the results of all the models for different evaluation metrics (execution time is higher). 
 
 ![](https://imgur.com/cY0kGTh.png) 
 
