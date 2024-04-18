@@ -41,7 +41,7 @@ Output variable (desired target):
 ### Business Objectives:
 The Business objective is to The data is predict if the client will subscribe to a term deposit for data related to direct marketing campaigns (phone calls) of a Portuguese banking institution using classification models namely K Nearest Neighbor, Logistic Regression, Decision Trees, and Support Vector Machines.
 
-# Reference Paper 
+## Reference Paper 
 According to USING DATA MINING FOR BANK DIRECT MARKETING: AN APPLICATION OF THE CRISP-DM METHODOLOGY, this is an implementation of a DM project based on the CRISP-DM methodology. The business goal is to find a model that can explain the success of a contract, i.e. if the client subscribes to the deposit. Such a model can increase campaign efficiency by identifying the main characteristics that affect success, helping in better management of the available resources (e.g. human effort, phone calls, time), and selecting a high-quality and affordable set of potential buying customers.
 
 ![](https://imgur.com/ebY1cOb.png) 
