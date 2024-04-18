@@ -121,4 +121,9 @@ SVM is the best model with an accuracy of 0.903937 and a Precision of 0.682403. 
 
 ![](https://imgur.com/cY0kGTh.png) 
 
+# Findings
+The data mining analysis in the Portuguese marketing campaign related to bank deposit subscriptions aimed to find a model that could explain the success of a contact, i.e., whether the client subscribes to the deposit. The Support Vector Machine (SVM) model achieved high predictive performances and the insights can be used by managers to enhance campaigns, such as increasing the length of phone calls or scheduling campaigns to specific months. Additionally, using open-source technology in the data mining field can provide high-quality models for real applications, such as *using cellular phones over telephones. *
+
+Call duration is the most relevant feature, meaning longer calls increase success. Secondly, the month of contact. Further analysis shows that success is most likely to occur in the last month of each trimester (March, June, September, and December). Such knowledge can be used to shift campaigns to happen in those months.
+
 Notebook: [link](https://github.com/deepasarojam-2024/UC-Berkeley-ML-AI/blob/main/Practical%20Application%20III%3A%20Comparing%20Classifiers/comparing_classifiers.ipynb)
