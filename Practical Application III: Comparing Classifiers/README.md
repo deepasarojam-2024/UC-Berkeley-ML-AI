@@ -121,3 +121,4 @@ SVM is the best model with an accuracy of 0.903937 and a Precision of 0.682403. 
 
 ![](https://imgur.com/cY0kGTh.png) 
 
+Notebook: https://github.com/deepasarojam-2024/UC-Berkeley-ML-AI/blob/main/Practical%20Application%20III%3A%20Comparing%20Classifiers/comparing_classifiers.ipynb 
