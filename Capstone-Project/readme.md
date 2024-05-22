@@ -1,4 +1,8 @@
-Machine Learning Capstone
+                                                                
+# <center> **Data-Driven Insights: Enhancing User Experience through Advanced Recommendation Systems**</center>  
+### **A Deep Dive into Collaborative Filtering, Content-Based Filtering, Rank-Based, Popularity-Based Methods, and Sentiment Analysis**
+
+## **Author -** **Deepa Sarojam** 
  
 
 ## **Key Findings/Results**
