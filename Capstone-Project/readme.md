@@ -8,13 +8,13 @@
 
 ## **Executive Summary**
 
-Recommender systems are algorithms designed to predict user preferences or recommend items to users. These systems have become ubiquitous in today's digital landscape, powering recommendations on platforms like Amazon, Netflix, and Spotify. My fascination with the transformative impact of these technologies on user engagement and satisfaction has inspired me to explore this topic for my capstone project.
+Recommender systems are algorithms designed to predict user preferences or recommend items to users. These systems have become ubiquitous in today's digital landscape, powering recommendations on platforms like Amazon, Netflix, and Spotify. My fascination with the transformative impact of these technologies on user engagement and satisfaction has inspired me to explore this topic for my Capstone project.
 
 By exploring sentiment analysis on the data, I aimed to understand user preferences and reactions more deeply, although the implementation was focused solely on the recommendation system. This project seeks to enhance the user experience by delivering accurate recommendations based on collaborative and popularity-based filtering techniques.
 
 ## **Data Sources**
 
-To construct a dataset suitable for exploring recommendation systems and sentiment analysis, I utilized **Python's Faker** library.
+To construct a dataset suitable for exploring recommendation systems and sentiment analysis, I utilized **Python's Faker** library, with **30, 000 records and 25 columns**.
 
 Drawing inspiration from publicly available datasets such as H&M data from Kaggle and the ShopperSentiments dataset, I synthesized a dataset containing relevant attributes like Transaction ID, Date, Product ID, Product Name, Product Description, Product Category, Sub Category, Color, Rating, Product Review, Quantity, Customer ID, Customer Name, Age, Price, Currency, Discounts, Sales Revenue, Payment Method, Store Type, Season, Latitude, Longitude, and Country. This rich dataset mirrors real-world transactional and review data, enabling comprehensive analysis and experimentation to enhance user experience through advanced recommendation systems and sentiment analysis.
 
@@ -54,7 +54,7 @@ There are 25 columns in the dataset.
 
 **Dataset**
 
-The dataset for this project was synthesized using Python Faker by taking inspiration from publicly available datasets such as the H&M dataset from Kaggle and the ShopperSentiments dataset. It includes various attributes like Transaction ID, Date, Product ID, Product Name, Product Description, Product Category, Sub Category, Color, Rating, Product Review, Quantity, Customer ID, Customer Name, Age, Price, Currency, Discounts, Sales Revenue, Payment Method, Store Type, Season, Latitude, Longitude, and Country. 
+The dataset for this project was synthesized using Python Faker by taking inspiration from publicly available datasets such as the H&M dataset from Kaggle and the ShopperSentiments dataset. It has **30, 000 records and 25 columns**. It includes various attributes like Transaction ID, Date, Product ID, Product Name, Product Description, Product Category, Sub Category, Color, Rating, Product Review, Quantity, Customer ID, Customer Name, Age, Price, Currency, Discounts, Sales Revenue, Payment Method, Store Type, Season, Latitude, Longitude, and Country. 
 
 **Exploratory Data Analysis (EDA)** 
 
@@ -181,7 +181,7 @@ When evaluating the performance of machine learning models, especially recommend
 
 and more.
 
-The evaluation criteria I'm considering here is Accuracy Score.
+The evaluation criteria I'm considering here is the Accuracy Score.
 
 - **Accuracy Score** is a metric used to evaluate the performance of a classification model. It measures the ratio of correctly predicted instances to the total instances in the dataset. In other words, it indicates how often the classifier is correct.
 
