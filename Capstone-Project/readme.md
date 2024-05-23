@@ -14,7 +14,7 @@ By exploring sentiment analysis on the data, I aimed to understand user preferen
 
 ## **Data Sources**
 
-To construct a dataset suitable for exploring recommendation systems and sentiment analysis, I utilized **Python's Faker** library, with **30, 000 records and 25 columns**.
+To construct a dataset suitable for exploring recommendation systems and sentiment analysis, I utilized **Python's Faker** library. It has **30, 000 records and 25 columns**.
 
 Drawing inspiration from publicly available datasets such as H&M data from Kaggle and the ShopperSentiments dataset, I synthesized a dataset containing relevant attributes like Transaction ID, Date, Product ID, Product Name, Product Description, Product Category, Sub Category, Color, Rating, Product Review, Quantity, Customer ID, Customer Name, Age, Price, Currency, Discounts, Sales Revenue, Payment Method, Store Type, Season, Latitude, Longitude, and Country. This rich dataset mirrors real-world transactional and review data, enabling comprehensive analysis and experimentation to enhance user experience through advanced recommendation systems and sentiment analysis.
 
