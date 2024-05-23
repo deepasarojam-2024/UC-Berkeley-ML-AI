@@ -5,4 +5,5 @@ matplotlib
 nltk
 stopwords
 folium
+streamlit_folium
 folium_static
