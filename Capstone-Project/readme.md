@@ -6,7 +6,7 @@
 
 # <center> ![Capstone Header Image](https://imgur.com/U8CuIiT.gif)</center>
 
-## **Execute Summary**
+## **Executive Summary**
 
 Recommender systems are algorithms designed to predict user preferences or recommend items to users. These systems have become ubiquitous in today's digital landscape, powering recommendations on platforms like Amazon, Netflix, and Spotify. My fascination with the transformative impact of these technologies on user engagement and satisfaction has inspired me to explore this topic for my capstone project.
 
