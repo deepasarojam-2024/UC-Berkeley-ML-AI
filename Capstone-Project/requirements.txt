@@ -6,4 +6,5 @@ nltk
 stopwords
 folium
 streamlit_folium
+WordCloud
 STOPWORDS
