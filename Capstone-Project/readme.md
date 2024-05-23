@@ -255,7 +255,7 @@ The capstone project demonstrated the efficacy of various recommendation algorit
 **Files Submitted for Review**
 The Capstone project consists of
 
-- Python Notebook - Recommender System.ipynb
+- Python Notebook - Recommender_System_using_Streamlit.ipynb
 - Dataset file -
   - retail_data.csv - https://drive.google.com/file/d/1bXXuGvYf2v5siYy1cIGeEy-O6WRc4Hwb/view?usp=drive_link
 
