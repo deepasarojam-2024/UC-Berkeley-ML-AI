@@ -24,7 +24,7 @@ st.set_page_config(layout="centered")
                    
 def add_logo():
     # Display the logo image in the sidebar
-    st.sidebar.image("Eva.png", width=180
+    st.sidebar.image("https://imgur.com/YGQvrIT.png", width=180
 )
 add_logo()
 
@@ -94,8 +94,8 @@ if not os.path.exists(os.path.join(nltk_data_path, 'corpora/wordnet')):
     nltk.download('wordnet', download_dir=nltk_data_path)
 
 # Load the dataset
-products_df = pd.read_csv("retail_data.csv")   
-country_counts_df = pd.read_csv("country_counts.csv")
+products_df = pd.read_csv("https://github.com/deepasarojam-2024/UC-Berkeley-ML-AI/blob/main/Capstone-Project/retail_data.csv")   
+country_counts_df = pd.read_csv("https://github.com/deepasarojam-2024/UC-Berkeley-ML-AI/blob/main/Capstone-Project/country_counts.csv")
 
 # Preprocessing setup
 stemmer = SnowballStemmer('english')
