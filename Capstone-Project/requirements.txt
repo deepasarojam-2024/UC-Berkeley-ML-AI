@@ -9,4 +9,3 @@ streamlit_folium
 WordCloud
 STOPWORDS
 TfidfVectorizer
-python==3.10
