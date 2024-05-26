@@ -13,6 +13,7 @@ import nltk
 import os
 import re
 import folium
+import sklearn
 from streamlit_folium import folium_static
 from folium.plugins import MarkerCluster
 from branca.colormap import linear
