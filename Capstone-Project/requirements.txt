@@ -9,3 +9,4 @@ streamlit_folium
 WordCloud
 STOPWORDS
 TfidfVectorizer
+scikit-learn
