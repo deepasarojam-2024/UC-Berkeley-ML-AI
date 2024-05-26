@@ -10,3 +10,4 @@ WordCloud
 STOPWORDS
 TfidfVectorizer
 scikit-learn
+Gitpython==3.10
