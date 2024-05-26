@@ -46,17 +46,17 @@ There are 25 columns in the dataset.
 * **Sales Revenue**: Revenue generated from the transaction.
 * **Payment Method**: Method used for payment.
 * **Store Type**: Type of store where the transaction occurred.
-* **Season**: Season in which the transaction occurred.
+* **Season**: The season in which the transaction occurred.
 * **Latitude**: Latitude of the transaction location.
 * **Longitude**: Longitude of the transaction location.
 * **Country**: Country where the transaction occurred.
 
+## **Feature Engineering**
 
-**Dataset**
+First, the dataset was analyzed in detail, cleaned, and preprocessed to be used for further processing. There are '18971' unique transactions in the dataset. Extracted year, month, day, time, month, weekday, week of the year, quarter, day of week and time of day from the 'Date' column. 
+Mapped abbreviations to full names for the Countries. 
 
-The dataset for this project was synthesized using Python Faker by taking inspiration from publicly available datasets such as the H&M dataset from Kaggle and the ShopperSentiments dataset. It has **30, 000 records and 25 columns**. It includes various attributes like Transaction ID, Date, Product ID, Product Name, Product Description, Product Category, Sub Category, Color, Rating, Product Review, Quantity, Customer ID, Customer Name, Age, Price, Currency, Discounts, Sales Revenue, Payment Method, Store Type, Season, Latitude, Longitude, and Country. 
-
-**Exploratory Data Analysis (EDA)** 
+## **Exploratory Data Analysis (EDA)** 
 
 - **Frequency of Purchases**: The analysis revealed that many users made frequent purchases in specific product categories. For instance, categories like "Womens Everyday Collection" and "Divided Collection" saw higher user interaction.
 
@@ -68,15 +68,18 @@ The dataset for this project was synthesized using Python Faker by taking inspir
 
 - **Global Reach**: The dataset showed a wide geographic distribution of shoppers, indicating that the user base was diverse and spread across various regions. This was visualized using interactive maps highlighting the concentration of purchases in different areas.
 
-- The United States dominates the number of purchases, followed by Canada, the United Kingdom, and Australia.
-![](https://imgur.com/uxsrr4j.png)
+  - The United States dominates the number of purchases, followed by Canada, the United Kingdom, and Australia.
+    ![](https://imgur.com/uxsrr4j.png)
 
 
-![](https://imgur.com/wiyWFtB.png)
+   It is evident from the Folium map that the shoppers are located across the world. 
+
+
+    ![](https://imgur.com/wiyWFtB.png)
 
 - **Rating Patterns:** The distribution of ratings indicated that most users tended to give higher ratings (4 or 5 stars), suggesting overall satisfaction with their purchases. There were fewer low ratings (1 or 2 stars), which could indicate a generally positive user experience.
 
-- **Skewness and Kurtosis:** The ratings distribution exhibited positive skewness, with a peak towards the higher end of the rating scale. The kurtosis value suggested that the distribution had lighter tails, meaning fewer extreme ratings.
+- **Skewness and Kurtosis:** The rating distribution exhibited positive skewness, with a peak towards the higher end of the rating scale. The kurtosis value suggested that the distribution had lighter tails, meaning fewer extreme ratings.
 
 - **Average Transaction Value**: The EDA revealed the average transaction value across different categories. High-value transactions were more common in categories like electronics and luxury items, while everyday items had lower average transaction values.
 
@@ -144,18 +147,18 @@ The performance of various recommendation algorithms was evaluated using metrics
 - **KNNWithZScore**: MSE = 1.407, RMSE = 1.186
 
 
-Among these, KNNBasic showed the lowest RMSE and MSE, indicating its superior predictive accuracy​.
+KNNBasic showed the lowest RMSE and MSE, indicating its superior predictive accuracy.
 
 **Recommendation Systems**
 
-**Popularity-Based Recommendation**: Items with the highest overall ratings were recommended to all users. This approach was particularly useful for new users with no prior interaction history.
+**Popularity-Based Recommendation**: Items with the highest overall ratings were recommended to all users. This approach was beneficial for new users with no prior interaction history.
 
 **Rank-Based Recommendation**: This approach used the frequency and recency of user interactions to rank items, providing recommendations based on the most interacted-with items.
 **Collaborative Filtering**: Utilized user-item interactions to identify similarities between users or items for making predictions.
 
 **Content-Based Filtering**: Focused on the attributes of items and user preferences to recommend similar items.
   
-  - **Cosine Similarity:** Utilized to measure the similarity between items or users. This technique was particularly useful in the implementation of a Streamlit app for real-time recommendations.
+  - **Cosine Similarity:** Utilized to measure the similarity between items or users. This technique was instrumental in the implementation of a Streamlit app for real-time recommendations.
 
 **Customer Sentiment Analysis**
 Sentiment analysis was performed on user reviews to gain deeper insights into user preferences and reactions:
@@ -164,7 +167,8 @@ Sentiment analysis was performed on user reviews to gain deeper insights into us
   - **Correlation with Ratings**: The sentiment scores were correlated with user ratings to validate the accuracy of the recommendation system.
   - **Improvement Insights**: Sentiment analysis provided actionable insights into product improvement and user satisfaction, allowing for more personalized recommendations.
 
-A peak at the Product Review
+A Peak at the Product Review using WordCloud
+
 ![](https://imgur.com/5sYgUTZ.png)
 
 When evaluating the performance of machine learning models, especially recommender systems, several criteria beyond accuracy score are considered to provide a comprehensive assessment. These criteria include:
@@ -175,7 +179,7 @@ When evaluating the performance of machine learning models, especially recommend
 
 - **F1 Score**: The harmonic mean of precision and recall, providing a balance between the two. It is particularly useful when dealing with imbalanced datasets.
 
-- **Mean Absolute Error (MAE)**: Calculates the average absolute difference between predicted and actual ratings, providing an indication of the prediction accuracy.
+- **Mean Absolute Error (MAE)**: Calculates the average absolute difference between predicted and actual ratings, indicating the prediction accuracy.
 
 - **Root Mean Squared Error (RMSE)**: Similar to MAE but penalizes larger errors more significantly. It is the square root of the average of squared differences between predicted and actual ratings.
 
