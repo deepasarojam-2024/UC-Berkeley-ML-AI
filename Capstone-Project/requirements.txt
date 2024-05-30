@@ -1,13 +1,13 @@
 streamlit==1.35.0
 nltk
 folium
-streamlit_folium
+streamlit-folium
 wordcloud
-scikit-learn==0.23.2
+scikit-learn==0.24.2  # Updated version with pre-built wheels
 gitpython==3.1.43
 seaborn==0.11.1
 matplotlib==3.4.1
 plotly==4.14.3
 pandas==1.2.3
-numpy==1.23.3
-scipy==1.9.3
+numpy==1.20.3  # Update to ensure compatibility
+scipy==1.6.3   # Downgrade to a version with pre-built wheels
