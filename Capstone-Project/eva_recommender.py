@@ -25,8 +25,10 @@ st.set_page_config(layout="centered")
                    
 def add_logo():
     # Display the logo image in the sidebar
-    st.sidebar.image("https://imgur.com/YGQvrIT.png", width=180
-)
+    # st.sidebar.image("https://imgur.com/43jcSya.png", width=180
+    st.logo(
+        "https://imgur.com/43jcSya.png"
+    )
 add_logo()
 
 # Function to set background image and font color
