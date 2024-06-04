@@ -74,10 +74,10 @@ def footer():
 
 
 # Setup NLTK data path
-nltk_data_path = nltk.data.path[0]
+# nltk_data_path = nltk.data.path[0]
 
 # Download NLTK data if not already downloaded
-if not os.path.exists(os.path.join(nltk_data_path, 'tokenizers/punkt')):
+if not os.path.exists(os.path.join(nltk, 'tokenizers/punkt')):
     nltk.download('punkt', download_dir=nltk_data_path)
 if not os.path.exists(os.path.join(nltk_data_path, 'corpora/stopwords')):
     nltk.download('stopwords', download_dir=nltk_data_path)
