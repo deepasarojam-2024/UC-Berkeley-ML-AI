@@ -77,12 +77,12 @@ def footer():
 # nltk_data_path = nltk.data.path[0]
 
 # Download NLTK data if not already downloaded
-if not os.path.exists(os.path.join(nltk, 'tokenizers/punkt')):
-    nltk.download('punkt', download_dir=nltk_data_path)
-if not os.path.exists(os.path.join(nltk_data_path, 'corpora/stopwords')):
-    nltk.download('stopwords', download_dir=nltk_data_path)
-if not os.path.exists(os.path.join(nltk_data_path, 'corpora/wordnet')):
-    nltk.download('wordnet', download_dir=nltk_data_path)
+# if not os.path.exists(os.path.join(nltk, 'tokenizers/punkt')):
+#     nltk.download('punkt', download_dir=nltk_data_path)
+# if not os.path.exists(os.path.join(nltk_data_path, 'corpora/stopwords')):
+#     nltk.download('stopwords', download_dir=nltk_data_path)
+# if not os.path.exists(os.path.join(nltk_data_path, 'corpora/wordnet')):
+#     nltk.download('wordnet', download_dir=nltk_data_path)
 
 # Load the dataset
 products_df = pd.read_csv("https://github.com/deepasarojam-2024/UC-Berkeley-ML-AI/blob/main/Capstone-Project/retail_data.csv")   
