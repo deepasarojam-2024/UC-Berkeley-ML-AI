@@ -9,7 +9,6 @@ import numpy as np
 import pandas as pd
 import os
 import re
-from branca.colormap import linear
 from wordcloud import WordCloud, STOPWORDS
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.stem import SnowballStemmer, WordNetLemmatizer
