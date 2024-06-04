@@ -85,8 +85,8 @@ def footer():
 #     nltk.download('wordnet', download_dir=nltk_data_path)
 
 # Load the dataset
-products_df = pd.read_csv("retail_data.csv")   
-country_counts_df = pd.read_csv("country_counts.csv")
+products_df = pd.read_csv("https://github.com/deepasarojam-2024/UC-Berkeley-ML-AI/blob/main/Capstone-Project/retail_data.csv")   
+country_counts_df = pd.read_csv("https://github.com/deepasarojam-2024/UC-Berkeley-ML-AI/blob/main/Capstone-Project/country_counts.csv")
 
 # Preprocessing setup
 stemmer = SnowballStemmer('english')
