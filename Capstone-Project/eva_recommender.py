@@ -10,7 +10,6 @@ import pandas as pd
 import os
 import re
 from sklearn.feature_extraction.text import TfidfVectorizer
-from nltk.stem import SnowballStemmer, WordNetLemmatizer
 from sklearn.metrics.pairwise import cosine_similarity
 st.set_page_config(layout="centered")
                    
