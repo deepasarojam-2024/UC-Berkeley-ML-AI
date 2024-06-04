@@ -7,7 +7,6 @@ Date: May 22, 2024
 import streamlit as st
 import numpy as np
 import pandas as pd
-from nltk.corpus import stopwords
 import nltk
 import os
 import re
